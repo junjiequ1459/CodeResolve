@@ -1,1 +1,1 @@
-# CUNYcodeResolveFrontend
+# CodeResolveFrontend
