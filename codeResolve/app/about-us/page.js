@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import styles from '../../styles/about.module.css';
+import Counter from '../../components/Counter'; // Import the Counter component
 
 export default function AboutUs() {
   const [message, setMessage] = useState(''); // State to store the API response
@@ -37,6 +38,13 @@ export default function AboutUs() {
       <p className={styles.paragraph}>
         <strong>Message from the API:</strong> {message}
       </p>
+
+      {/* Add the Counter Component */}
+      <section className={styles.section}>
+        <h2 className={styles.heading}>Interactive Counter</h2>
+        <Counter />
+      </section>
+
       <a href="/" className={styles.link}>Go Back Home</a>
     </div>
   );
